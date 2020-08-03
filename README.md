@@ -1,24 +1,10 @@
-# README
+# BRASS (Basic RoR API Store Setup 😅)
+Experimenting with store architecture through a RoR API.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+After a few years of comercial work, a fresh view on basic store architecture. Dynamic and playful, will likely keep changing over time, as the wind blows...
 
-Things you may want to cover:
+Chose RoR due to my familiarity with the framework. The quick (and familiar) installation process allows to start writing the actual logic in a breathe. OOP and ecommerce do get along; Rails "convention" concept invites to write clean code, readable and easy to follow; code updates, new functionalities and logic refactors are also quick to write. On the downside, certain RoR performance concerns have been traditionally raised and Ruby magic can sometimes be a bit overwhelming. But overall a nice and fast choice to experiment with.
 
-* Ruby version
+I will start from scratch, and might or might not use some common gems.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+API documentation will follow.
