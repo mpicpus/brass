@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = 'unavailable'.in?(params.keys) ? Product.all : Product.available
+    @show_unavailable = 'unavailable'.in?(params.keys)
+    @products = @show_unavailable ? Product.all : Product.available
   end
 end

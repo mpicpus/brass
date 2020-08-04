@@ -3,11 +3,9 @@ json.permalink product.permalink
 json.available_on product.available_on
 
 json.parcels do
-  json.in_stock_now do
-    json.partial! 'parcels/parcel', collection: product.parcels.in_stock_now, as: :parcel
-  end
+  parcels = product.parcels
+  parcels = parcels.in_stock_whenever unless show_unavailable
 
-  json.in_stock_in_the_future do
-    json.partial! 'parcels/parcel', collection: product.parcels.in_stock_in_the_future, as: :parcel
-  end
+  json.partial! 'parcels/parcel', collection: parcels, as: :parcel
+
 end
